@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SriSaiVedaGayatri</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link href="~/Content/style.css" rel="stylesheet" />
+    <link href="~/Content/Site.css" rel="stylesheet" />
+</head>
+
+<body class="navbar-default">
+    <div class="container">
+        <marquee behavior="alternate"><h1>SRI SAI VEDA GAYATHRI POOJA SERVICES. <br /><span class="glyphicon glyphicon-phone">(630)247-0173</span>, <span class="glyphicon glyphicon-phone">(630)299-0312</span></h1></marquee>
+        <div>
+            <img src="@Url.Content("~/Images/banner.jpg")" class="img-responsive img-rounded" width="1500px" height="220px" />
+        </div>
+        <br />
+        <div class="navbar navbar-inverse ">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Ramesh Kumar Sharma", "About", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li>@Html.ActionLink("Home", "Home", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        
+                        <li>@Html.ActionLink("Services", "Service", "Home")</li>
+                        <li>@Html.ActionLink("SaiPalkhi", "Links", "Home")</li>
+                        <li>@Html.ActionLink("Astrology", "Astrology", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        
+                        <li>@Html.ActionLink("Videos", "Events", "Home")</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div>
+            <marquee behavior="alternate"> <h2>Self Transportation will be done to Home and Pooja Site.</h2></marquee>
+        </div><hr />
+        <div class="mainColor">
+            @RenderBody()
+        </div>
+    </div>
+    <div class="container">
+        <hr/>
+        <p class="text-right">
+            Designed by <b><a href="mailto:praveendhatrika@gmail.com">Praveen K. Dhatrika</a></b><br />
+            &copy; @DateTime.Now.Year - Sri Sai Veda Gayatri Pooja Services<br />
+            
+        </p>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

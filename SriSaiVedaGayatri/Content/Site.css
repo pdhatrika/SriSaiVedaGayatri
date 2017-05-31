@@ -1,0 +1,73 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+.navbar-default {
+    font-family: Algerian;
+    background-color: lightgoldenrodyellow;
+     
+    color: red;
+}
+
+.mainColor {
+     font-family:'Book Antiqua';
+    font-size: 20px;
+    color: darkslateblue;
+}
+
+.themeColor {
+    color: white;
+}
+
+.tablecss {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+}
+.cardcss {
+    font-family:'Baskerville Old Face';
+    font-size: 15px;
+    background-color:gold;
+    color: black;
+}
+.example {
+    background-color:goldenrod;
+}
+.hr-color {
+    color:red
+}
+
+.text-color {
+color:darkviolet ;
+}
+
+.col-1{
+    background-color:greenyellow;
+}
+
+.col-2{
+    background-color:orange;
+}
+.col-3 {
+    background-color:slategrey;
+}

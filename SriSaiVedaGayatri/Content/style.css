@@ -1,0 +1,30 @@
+﻿
+
+.navbar-default {
+    font-family: Algerian;
+    background-color: lightgoldenrodyellow;
+    color: red;
+}
+
+.mainColor {
+     font-family:'Book Antiqua';
+    font-size: 20px;
+    color: darkslateblue;
+}
+
+.themeColor {
+    color: white;
+}
+
+.tablecss {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    color: black;
+}
+.cardcss {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 15px;
+    background-color:aqua;
+    color: black;
+}
+
