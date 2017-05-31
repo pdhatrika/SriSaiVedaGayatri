@@ -108,10 +108,11 @@ namespace SriSaiVedaGayatri.Controllers
             MailMessage mailMessage = new MailMessage();
 
             mailMessage.From = new MailAddress(email.fromEmail);
+            mailMessage.To.Add("vrksharma@sripooja.com");
             mailMessage.To.Add("saipriest@hotmail.com");
-            mailMessage.CC.Add("vrksharma@sripooja.com");
+            //mailMessage.CC.Add("vrksharma@sripooja.com");
             mailMessage.CC.Add("vrkspooja@hotmail.com");
-            //mailMessage.Bcc.Add("praveendhatrika@gmail.com");
+            //mailMessage.Bcc.Add("pravs.dhats@gmail.com");
             mailMessage.Subject = email.mailSubject;
             mailMessage.Body = email.mailMessage;
             mailMessage.IsBodyHtml = true;
